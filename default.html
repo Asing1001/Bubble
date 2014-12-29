@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/alphbet.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" height="300" width="1500px"></canvas>
+<canvas id="myCanvas2" height="200" width="1500px"></canvas>
+<script type="text/javascript" src="JS/Bubble.js"></script>
+<script type="text/javascript" defer="">
+    var red = [0, 100, 63];
+    var orange = [40, 100, 60];
+    var green = [75, 100, 40];
+    var blue = [196, 77, 55];
+    var purple = [280, 50, 60];
+
+    var words = "Happy Birthday!!";
+    var myName = "by Andy 2014/12/29";
+    var letterColors = [red, orange, green];
+    var letterColors2 = [green, blue, purple];
+    var h = 200;
+    var w = 1400;
+
+    if (1 > 2) {
+        bubbleShape = "square";
+    }
+    else {
+        bubbleShape = "circle";
+    }
+
+    canvas = $('#myCanvas2');
+    drawName(myName, letterColors2);
+    bounceBubbles();
+
+    canvas = $('#myCanvas');
+    h = 300;
+    drawName(words, letterColors);
+    bounceBubbles();
+
+</script>
+
+</body>
+</html>
